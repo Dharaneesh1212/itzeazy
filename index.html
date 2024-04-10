@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Questions Section 1 -->
+      <div class="questions-section" id="questions-section-1">
+        <!-- Question 1 -->
+        <div class="question1">
+          <label for="text1">First name:</label>
+          <input
+            type="text"
+            id="text1"
+            class="answer"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <!-- Question 2 -->
+        <div class="question1">
+          <label for="text2">Last name:</label>
+          <input
+            type="text"
+            id="text2"
+            class="answer"
+            placeholder="Enter your last name"
+          />
+        </div>
+      </div>
+
+      <!-- Questions Section 2 -->
+      <div class="questions-section" id="questions-section-2">
+        <!-- Question 3 -->
+        <div class="question2">
+          <label for="select1">Select a two-wheeler:</label>
+          <select id="select1" class="answer">
+            <option value="" class="default-option">Choose a vehicle</option>
+            <option value="gear-bike">Gear Bike</option>
+            <option value="non-gear-bike">Non-gear Bike</option>
+          </select>
+        </div>
+        <!-- Question 4 -->
+        <div class="question2">
+          <label for="select2">Select a four-wheeler:</label>
+          <select id="select2" class="answer">
+            <option value="" class="default-option">Choose a vehicle</option>
+            <option value="car">Car</option>
+            <option value="mini-van">Mini Van</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Questions Section 3 -->
+      <div class="questions-section" id="questions-section-3">
+        <!-- Question 5 -->
+        <div class="question3">
+          <label for="radio1">
+            <input
+              type="radio"
+              name="vehicle"
+              id="radio1"
+              class="answer-radio"
+            />
+            Bike license
+          </label>
+        </div>
+        <!-- Question 6 -->
+        <div class="question3">
+          <label for="radio2">
+            <input
+              type="radio"
+              name="vehicle"
+              id="radio2"
+              class="answer-radio"
+            />
+            Car license
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
